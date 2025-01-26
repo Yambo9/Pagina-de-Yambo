@@ -1,0 +1,27 @@
+/*------------------------------------------------OVERALL-------------------------------------------------------------------------*/
+body{ 
+    background-image: url(paper-rosa.jpg);
+    background-color: aliceblue;
+    background-size: cover;
+    background-attachment: fixed;}
+    
+.fondo{position: absolute;
+    top: -300px;}
+    
+a{text-decoration: none;}
+a:hover{color: red;}
+h2:hover{color:red;}
+.mascota{position: fixed;top: 360px;left: 1150px;}
+/*------------------------------------------------OVERALL-------------------------------------------------------------------------*/
+/*------------------------------------------------BARRA-------------------------------------------------------------------------*/
+.barra{  
+        display: grid;
+        grid-template-columns: repeat(20,1fr);
+        font-size: 20px;
+        padding-left: 10px;
+        position: relative;
+        bottom: 5px;  
+        
+    }
+    
+    /*------------------------------------------------BARRA-------------------------------------------------------------------------*/ 

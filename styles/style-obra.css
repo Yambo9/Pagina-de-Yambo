@@ -1,0 +1,54 @@
+
+/*---------------------------------OVERALL------------------------------------------------------*/
+body{background-size: cover;
+     
+     background-attachment: fixed;
+     background-color: black;
+     background-image: url(museo2.jpg); }
+
+.mascota{position: fixed;top: 360px;left: 1150px;}
+a:hover{
+    color:black;
+}
+.img-hover-zoom {
+    /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform 0.3s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.05);
+  }
+
+
+
+    /*---------------------------------OVERALL------------------------------------------------------*/
+/*---------------------------------BARRA------------------------------------------------------*/
+.barra{  
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    font-size: 20px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;    
+}
+/*---------------------------------BARRA------------------------------------------------------*/
+/*----------------------------------------------MUSEO------------------------------------------------------*/
+#biContainer{display: grid; grid-template-columns: 50% 47% 3%; grid-auto-rows: minmax(100px,auto); background-image: url(); }
+#biblioteca{grid-column: 1;}
+#biblioDescription{grid-column: 2;color: wheat;  display: grid; grid-template-rows: 20% 50% 30%; background-color: rgba(0, 0, 0, 0.6); padding-left: 25px;padding-right: 25px;}
+/*----------------------------------------------MUSEO------------------------------------------------------*/
+/*----------------------------------------OBRA CONTAINER------------------------------------------------------*/
+.obraContainer{display: grid; background-color: black; 
+    grid-template-columns: 10% 30% 20% 30% 10%; grid-auto-rows: minmax(150px,auto) ;}
+#obra1{grid-row: 1/5; width: 300px;}
+#obra2{grid-row: 2/5; width: 600px; grid-column: 2/5;}
+#obra3{grid-row: 3/5; width: 300px;}
+#obra4{grid-row: 4/5; width: 300px;}
+#obra5{grid-row: 5/5; width: 300px;}
+/*----------------------------------------OBRA CONTAINER------------------------------------------------------*/
