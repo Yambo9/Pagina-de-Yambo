@@ -1,175 +1,282 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Yambo</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Tu CSS Personalizado -->
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>~Yambo</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Tu CSS Personalizado -->
+  <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-    <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="yambo.html"><h1>Y a m b o</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="yambo.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="obra.html">Obras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="yambo.html"><h1>Y a m b o</h1></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="yambo.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="obra.html">Obras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- CARRUSEL (Usando Bootstrap Carousel) -->
-    <div id="carouselYambo" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselYambo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselYambo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselYambo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselYambo" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Carrusel/ilustraciones.jpg" class="d-block w-100" alt="Ilustraciones">
-                <div class="carousel-caption d-none d-md-block">
-                    <p>Ilustraciones Creativas</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Carrusel/ilustraciones2.jpg" class="d-block w-100" alt="Personajes Rotatorios">
-                <div class="carousel-caption d-none d-md-block">
-                    <p>Personajes Rotatorios</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Carrusel/ilustraciones3.jpg" class="d-block w-100" alt="Rotación Flores">
-                <div class="carousel-caption d-none d-md-block">
-                    <p>Rotación de Flores</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Carrusel/ilustraciones4.jpg" class="d-block w-100" alt="Rotación Estallido">
-                <div class="carousel-caption d-none d-md-block">
-                    <p>Rotación Estallido</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselYambo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselYambo" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
-    
-    <!-- SECCIÓN "¿Qué hay de nuevo?" -->
-    <div class="container my-5">
-        <h2 class="text-center mb-4">¿Qué hay de nuevo...</h2>
-        <hr>
-    </div>
-    
-    <!-- TARJETAS DE NOVEDADES -->
-    <div class="container">
-        <div class="row g-4">
-            <!-- Novedad 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <a href="obra.html"><img src="images2version/cuadro-personajeArreglado.jpg" class="img-fluid rounded-start" alt="Nueva Mascota"></a>
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="obra.html" class="text-decoration-none">¡UNA NUEVA MASCOTA SE HA UNIDO A LA PÁGINA!</a></h5>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, velit deserunt magnam quo excepturi earum error soluta architecto eos accusantium.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Novedad 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="row g-0">
-                        <div class="col-4 ">
-                            <img src="images2version/gusanoGif.gif" class="img-fluid rounded-start " alt="Lombrices">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="obra.html" class="text-decoration-none">LAS LOMBRICES PRIMIGENIAS FUERON AGREGADAS A LA BIBLIOTECA</a></h5>
-                                
-                            </div>
-                        </div>
-                        <div class="col-12"><p class="card-text px-3 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, velit deserunt magnam quo excepturi earum error soluta architecto eos accusantium.</p></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Novedad 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="images2version/enemigos gif.gif" class="img-fluid rounded-start" alt="Enemigos">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="obra.html" class="text-decoration-none">¡MÁS PÁGINAS FUERON INCLUIDAS EN EL LISTADO DE ENEMIGOS REPUDIABLES!</a></h5>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, velit deserunt magnam quo excepturi earum error soluta architecto eos accusantium.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- BOTÓN MODO BIZARRO (a la izquierda de la mascota) -->
+  <div
+    id="root-bizarro"
+    style="
+      position: fixed;
+      bottom: 20px;
+      right: 220px;
+      z-index: 9999;
+    "
+  ></div>
 
-    <!-- INFERIOR -->
-    <footer class="container text-center my-5">
-        <hr>
-        <p style="font-size: 13px;">
-            Copyrights and trademarks for the manga, and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the Copyright Law.
-            <br>© 2016 - 2025 ReadManga.Today
-        </p>
-    </footer>
-    
-    <!-- MASCOTA -->
-    <div class="mascota">
-        <img src="images2version/mascotaGifArreglado.gif" alt="mascota" class="img-fluid">
+  <!-- CARRUSEL - SIN data-bs-ride / data-bs-interval (lo controlamos manual) -->
+  <div id="crazyCarousel" class="carousel slide">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#crazyCarousel"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#crazyCarousel"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#crazyCarousel"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#crazyCarousel"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
     </div>
-    
-    <!-- Cuadro de Texto de la Mascota -->
-    <div class="cuadro-texto p-3 bg-dark text-white rounded">
-        <p id="textoMascota"></p>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="Carrusel/ilustraciones.jpg"
+          class="d-block w-100"
+          alt="Ilustraciones"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <p>Ilustraciones Creativas</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Carrusel/ilustraciones2.jpg"
+          class="d-block w-100"
+          alt="Personajes Rotatorios"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <p>Personajes Rotatorios</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Carrusel/ilustraciones3.jpg"
+          class="d-block w-100"
+          alt="Rotación Flores"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <p>Rotación de Flores</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Carrusel/ilustraciones4.jpg"
+          class="d-block w-100"
+          alt="Rotación Estallido"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <p>Rotación Estallido</p>
+        </div>
+      </div>
     </div>
-    
-    <!-- Bootstrap JS y dependencias (Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Tu JavaScript Personalizado -->
-    <script src="peyiya.js"></script>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#crazyCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#crazyCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- SECCIÓN "¿Qué hay de nuevo?" -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">¿Qué hay de nuevo...</h2>
+    <hr>
+  </div>
+
+  <!-- TARJETAS DE NOVEDADES - Cards Flip -->
+  <div class="container cards-section">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-6 col-md-4">
+        <div class="card-flip">
+          <div class="card-flip-inner">
+            <div class="card-flip-front">
+              <img
+                src="images2version/cuadro-personajeArreglado.jpg"
+                class="img-fluid w-100"
+                alt="Nueva Mascota"
+              />
+              <h5 class="mt-2 text-center fw-bold">
+                ¡UNA NUEVA MASCOTA SE HA UNIDO A LA PÁGINA!
+              </h5>
+            </div>
+            <div class="card-flip-back d-flex flex-column justify-content-center align-items-center">
+              <h5>Detalles</h5>
+              <p class="px-3">
+                Lorem ipsum dolor, sit amet consectetur.
+              </p>
+              <a href="obra.html" class="btn btn-warning">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-6 col-md-4">
+        <div class="card-flip">
+          <div class="card-flip-inner">
+            <div class="card-flip-front">
+              <img
+                src="images2version/gusanoGif.gif"
+                class="img-fluid w-100"
+                alt="Lombrices"
+              />
+              <h5 class="mt-2 text-center fw-bold">
+                LAS LOMBRICES PRIMIGENIAS FUERON AGREGADAS
+              </h5>
+            </div>
+            <div class="card-flip-back d-flex flex-column justify-content-center align-items-center">
+              <h5>Detalles</h5>
+              <p class="px-3">
+                Lorem ipsum dolor, sit amet consectetur.
+              </p>
+              <a href="obra.html" class="btn btn-warning">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-6 col-md-4">
+        <div class="card-flip">
+          <div class="card-flip-inner">
+            <div class="card-flip-front">
+              <img
+                src="images2version/enemigos gif.gif"
+                class="img-fluid w-100"
+                alt="Enemigos"
+              />
+              <h5 class="mt-2 text-center fw-bold">
+                ¡MÁS PÁGINAS FUERON INCLUIDAS EN EL LISTADO!
+              </h5>
+            </div>
+            <div class="card-flip-back d-flex flex-column justify-content-center align-items-center">
+              <h5>Detalles</h5>
+              <p class="px-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <a href="obra.html" class="btn btn-warning">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="container text-center my-5">
+    <hr />
+    <p style="font-size: 13px;">
+      Copyrights 
+      <br />© 2016 - 2025 ReadManga.Today
+    </p>
+  </footer>
+
+  <!-- MASCOTA -->
+  <div class="mascota">
+    <img
+      src="images2version/mascotaGifArreglado.gif"
+      alt="mascota"
+      class="img-fluid"
+    />
+  </div>
+  <div class="cuadro-texto p-3 bg-dark text-white rounded">
+    <p id="textoMascota"></p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- React, ReactDOM, Babel -->
+  <script
+    src="https://unpkg.com/react@18/umd/react.development.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    crossorigin
+  ></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- app.js -->
+  <script type="text/babel" src="app.js"></script>
 </body>
 </html>
